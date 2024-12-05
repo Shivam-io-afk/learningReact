@@ -30,7 +30,7 @@ function UsingComponentInSame(){
   
   return (
     <div>
-      <h1>
+      <h1>  
         This is on same page - {username}
       </h1>
       <button className='btn' onClick={() => alert("This is Msg...")}>Click Function</button>

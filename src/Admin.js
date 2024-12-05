@@ -1,7 +1,10 @@
-function Admin(){
-    return(
-        <div> 
-            <h1>This Is Admin</h1>
+function Admin() {
+    return (
+        <div>
+            <pre style={{ fontSize: 13 + "px" }}>
+                            
+
+            </pre>
         </div>
     )
 }
