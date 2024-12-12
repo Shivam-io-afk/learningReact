@@ -7,5 +7,15 @@ export function User(){
     )
 };
 
+// Another way to do this -->
 
-export default User;
+export function Main(){
+    return (
+        <div>
+        <h2 className="App"> This is Admin Component - 1 </h2>
+        <h2 className="App"> This is Admin Component - 2</h2>
+        </div>        
+    )
+};
+
+export default Main;
