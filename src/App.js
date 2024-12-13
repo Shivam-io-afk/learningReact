@@ -4,7 +4,6 @@ import NorComponent from "./NorComponent"; /* These are the way to use import an
 import { User, Main } from "./User";  /* These are the way to use import and use component*/
 import Admin from './Admin';
 
-
 function App() {
   return (
     <div className="App">
@@ -23,9 +22,8 @@ function App() {
 
 // Using components in same file and using click events 
 function UsingComponentInSame(){
-  var username = "darknight-911";
+  var username = "darknight_911";
   function callfun(){
-    username = "911";
     alert("This came automatically");
     <NorComponent/>
   }
