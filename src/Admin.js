@@ -1,9 +1,8 @@
 function Admin() {
     return (
         <div>
-            <pre style={{ fontSize: 13 + "px" }}>
-                            
-
+            <pre style={{ fontSize: 16 }}>
+                            Hello Dear
             </pre>
         </div>
     )
