@@ -1,9 +1,10 @@
 import React from 'react';
 import Form from './form'
-
+import { useState } from 'react';
 const Rendering = () => {
-    const isLoggedIn = true;
 
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    
     return (
         <div>
             {
