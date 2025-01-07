@@ -6,17 +6,29 @@ import {State} from './UsingState';
 import Porps from './UsingProps'
 import reportWebVitals from './reportWebVitals';
 import Form from './form';
+import Rendering from './conditionRendering';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App/>
+    
     <br/><hr/><hr/><br/>
+    
     <State/>
+    
     <br/><hr/><hr/><br/>
+    
     <Porps name='LalSinghChaddha' userID="battalion 609"/>
+    
     <br/><hr/><hr/><br/>
+    
     <Form/>
+
+    <br/><br/><br/><br/><br/>
+    <br/><br/><br/> <hr/><hr/> <br/><br/>
+    
+    <Rendering/>
   </React.StrictMode>
 );
 
