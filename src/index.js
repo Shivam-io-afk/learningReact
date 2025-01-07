@@ -5,6 +5,7 @@ import App from './App';
 import {State} from './UsingState';
 import Porps from './UsingProps'
 import reportWebVitals from './reportWebVitals';
+import Form from './form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,9 @@ root.render(
     <br/><hr/><hr/><br/>
     <State/>
     <br/><hr/><hr/><br/>
-    <Porps name='LOOPS' userID="5639"/>
+    <Porps name='LalSinghChaddha' userID="battalion 609"/>
+    <br/><hr/><hr/><br/>
+    <Form/>
   </React.StrictMode>
 );
 
