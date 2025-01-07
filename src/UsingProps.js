@@ -1,23 +1,40 @@
 import { useState } from "react";
 
-function Proper(props){
-    const [value, setValue] = useState("------");
+function Proper(props) {
+    const [value, setValue] = useState("");
 
-    function run(){
-        document.querySelector("#inp").addEventListener("keydown", function(e){
-            if(e.key === "Enter"){
-                // setValue(e.target.value);
-            }
-            setValue(e.target.value);
-        });
+    function run(innervalue) {
+        setValue(innervalue);
     }
-    return(
+
+
+    function getValue() {
+        let input = document.querySelector("#inptxt");
+        let display = document.querySelector(".txt");
+
+        display.innerHTML = input.value;
+    }
+
+    return (
         <div>
             <h5>{props.name}</h5>
             <h5>{props.userID}</h5>
-            <br></br> <br></br>
-            <h5>{value}</h5> 
-            <input type="text" id="inp" onKeyDown={() => run()}/>
+            <br></br>
+
+            <h5>Change by using STATE - {value}</h5>
+            <input type="text" onKeyUp={(e) => run(e.target.value)} />
+
+            
+            <br></br>
+            <br></br>
+
+            <div style={{border: "1px solid black", padding: "10px", backgroundColor: "lightgray" }}>
+                <h5>Changing by button Press - <i className="txt"></i></h5>
+                <input style={{height:"30px"}} type="text" id="inptxt" />
+                &nbsp;
+                <button style={{height:"30px", width:"60px", fontSize:"15px"}} onClick={() => getValue()}>btn</button>
+            </div>
+       
         </div>
     )
 };
