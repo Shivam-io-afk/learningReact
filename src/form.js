@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function FormHandler() {
+function FormHandler(p) {
     const [name, setName] = useState(null);
     const [tnc, setTnc] = useState(false);
     const [checked, setChecked] = useState(false);
@@ -9,7 +9,8 @@ function FormHandler() {
     function prevent(e) {
         e.preventDefault();
         console.log(name,tnc,checked);
-    }
+    }   
+
     return (
         <div style={{ height: "150px", width: "100%" }}>
             <h1>Form Handler</h1>
@@ -28,7 +29,7 @@ function FormHandler() {
                 </div>
                 <br/>
                 <div>
-                    <button type='submit'>Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type='submit' onClick={() => p.data()}>Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type='reset' value='Reset'/>
                 </div>
                 <br/>

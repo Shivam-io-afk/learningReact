@@ -6,7 +6,7 @@ import {State} from './UsingState';
 import Porps from './UsingProps'
 import reportWebVitals from './reportWebVitals';
 import Form from './form';
-import Rendering from './conditionRendering';
+import Rendering from './ConditionRendering';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,6 +29,7 @@ root.render(
     <br/><br/><br/> <hr/><hr/> <br/><br/>
     
     <Rendering/>
+    
   </React.StrictMode>
 );
 
