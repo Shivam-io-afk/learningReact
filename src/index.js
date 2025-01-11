@@ -2,37 +2,51 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {State} from './UsingState';
+import { State } from './UsingState';
 import Porps from './UsingProps'
 import reportWebVitals from './reportWebVitals';
 import Form from './Form';
 import Class from './ClassComponent';
-// import Rendering from './ConditionRenderin';//This is commented because it is not used in this file
+import Rendering from './ConditionRenderin';
+import States from './Hooks/State';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+var k = 1;
 root.render(
   <div>
-    <App/>
-    
-    <br/><hr/><hr/><br/>
-    
-    <State/>
-    
-    <br/><hr/><hr/><br/>
-    
-    <Porps name='LalSinghChaddha' userID="battalion 609"/>
-    
-    <br/><hr/><hr/><br/>
-    
-    <Form/>
+    {
+      k < 1 ?
+        <div>
+          <App />
 
-    <br/><br/><br/><br/><br/>
-    <br/><br/><br/> <hr/><hr/> <br/><br/>
-    
-    {/* <Rendering/> */}
-    <Class/>
+          <br /><hr /><hr /><br />
+
+          <State />
+
+          <br /><hr /><hr /><br />
+
+          <Porps name='LalSinghChaddha' userID="battalion 609" />
+
+          <br /><hr /><hr /><br />
+
+          <Form />
+
+          <br /><br /><br /><br /><br />
+          <br /><br /><br /> <hr /><hr /> <br /><br />
+
+          <Rendering />
+          <br /><br /><br /> <hr /><hr /> <br /><br />
+
+          <Class />
+        </div>
+        : 
+        <div>
+          <States />
+        </div>
+    }
   </div>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
