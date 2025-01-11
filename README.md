@@ -181,4 +181,10 @@ In React class components, the update process involves several lifecycle methods
    - Dependencies (`[dep1, dep2]`): Runs on changes to the specified values.
    - No array: Runs after every render.
 
-Let me know if you'd like examples tailored to a specific use case! 😊
+
+
+
+
+
+# In Functional Component 
+-useEffect is very useful hook, it contains all lifecycle method 3
