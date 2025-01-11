@@ -16,13 +16,11 @@ export function State() {
       <button onClick={increment}>Increment</button>
 
       <hr /><hr />
-      <hr /><hr />
 
       <h4>{name}</h4>
       <button onClick={() => setName("Eglueo")}>Change By State</button>
 
-      <hr /><hr />
-      <hr /><hr />
+     
 
       <h4 style={{fontSize:"20px"}}>
         Hide And Show Elements <br/> &nbsp;

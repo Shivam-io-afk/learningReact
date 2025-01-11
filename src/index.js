@@ -11,7 +11,7 @@ import Rendering from './ConditionRenderin';
 import States from './Hooks/State';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-var k = 1;
+var k = 0;
 root.render(
   <div>
     {
@@ -31,11 +31,11 @@ root.render(
 
           <Form />
 
-          <br /><br /><br /><br /><br />
-          <br /><br /><br /> <hr /><hr /> <br /><br />
+          <br /><br /><br />
+          <br /><hr /> <br />
 
           <Rendering />
-          <br /><br /><br /> <hr /><hr /> <br /><br />
+          <br /><br /><br /> <hr /> <br /><br />
 
           <Class />
         </div>

@@ -20,6 +20,7 @@ function Proper(props) {
             <h5>{props.name}</h5>
             <h5>{props.userID}</h5>
             <br></br>
+            <hr /><hr />
 
             <h5>Change by using STATE - {value}</h5>
             <input type="text" onKeyUp={(e) => run(e.target.value)} />
@@ -27,6 +28,7 @@ function Proper(props) {
             
             <br></br>
             <br></br>
+            <hr /><hr />
 
             <div style={{border: "1px solid black", padding: "10px", backgroundColor: "lightgray" }}>
                 <h5>Changing by button Press - <i className="txt"></i></h5>
