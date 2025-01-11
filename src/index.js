@@ -7,7 +7,7 @@ import Porps from './UsingProps'
 import reportWebVitals from './reportWebVitals';
 import Form from './Form';
 import Class from './ClassComponent';
-import Rendering from './ConditionRenderin';
+// import Rendering from './ConditionRenderin';//This is commented because it is not used in this file
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

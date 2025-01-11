@@ -3,47 +3,42 @@
 import React from 'react';
 
 class User extends React.Component {
-    constructor(){ // State is initialized here
+    constructor() { // State is initialized here
         super();
         this.state = {
             name: "John Doe",
             userID: "1234",
-            count : 0
+            count: 0
         }
         console.log("Constructor");
     }
 
-        //We can use api calls here if no condition is required
+    //We can use api calls here if no condition is required
     // Using ComponentDidMount() method
-    componentDidMount(){
+    componentDidMount() {
         console.log("Mounted");
     }
 
-        //we can use api calls here if condition is required
+    //we can use api calls here if condition is required
     // Using ComponentDidUpdate() method
-    componentDidUpdate(preProps, preState){
+    componentDidUpdate(preProps, preState) {
         // console.log("Updated",this.state.count);
-        console.log("Updated",preState.count,this.state.count);
+        console.log("Updated", preState.count, this.state.count, this.state.count%2);
 
     }
 
 
     // Using shouldComponentUpdate() method
-    shouldComponentUpdate(nextProps, nextState){
-        console.log("Should Update");
-        if(nextState.count > 5){
-            return false; //by default it is true
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log("\nShould Update");
+        if (nextState.count > 6) {
+            return false; //by default it is false, it prevent the component to update
         }
         return true;
     }
 
 
-    // Using componentWillUnmount() method
-    componentWillUnmount(){
-        console.log("Unmounted");
-    }
-    
-    render(){
+    render() {
         console.log("Rendered");
         return (
             <div>
@@ -51,9 +46,13 @@ class User extends React.Component {
                 <h2>Hi, I'm {this.state.name}</h2>
                 <h3>My User ID is {this.state.userID}</h3>
                 <h4>COUNTER : {this.state.count}</h4>
-                <button onClick={() => {this.setState({count:this.state.count+1})}}>Click Me to Update</button>
-                <br/><br/>
-                <br/><br/>
+                <button onClick={() => { this.setState({ count: this.state.count + 1 }) }}>Click Me to Update</button>
+                <br /><br />
+                <br /><br />
+
+                {
+                    this.state.count % 2 ? <Child /> : null
+                }
             </div>
         );
     }
@@ -62,3 +61,29 @@ class User extends React.Component {
 
 
 export default User;
+
+
+
+class Child extends React.Component {
+    constructor() {
+        super();
+        console.log("Child Constructor");
+    }
+
+
+      // Using componentWillUnmount() method
+      componentWillUnmount() {
+        console.log("\nUnmounted");
+    }
+
+    render() {
+        return (
+            <div>
+                <h2>Child Component</h2>
+            </div>
+        )
+    }
+}
+
+
+export { Child };
