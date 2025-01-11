@@ -5,13 +5,13 @@ import App from './App';
 import {State} from './UsingState';
 import Porps from './UsingProps'
 import reportWebVitals from './reportWebVitals';
-import Form from './form';
-// import Rendering from './ConditionRendering';
-import Class from './ClassComponent'
+import Form from './Form';
+import Class from './ClassComponent';
+import Rendering from './ConditionRenderin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <div>
     <App/>
     
     <br/><hr/><hr/><br/>
@@ -31,7 +31,7 @@ root.render(
     
     {/* <Rendering/> */}
     <Class/>
-  </React.StrictMode>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
