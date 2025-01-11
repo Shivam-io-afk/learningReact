@@ -6,7 +6,8 @@ import {State} from './UsingState';
 import Porps from './UsingProps'
 import reportWebVitals from './reportWebVitals';
 import Form from './form';
-import Rendering from './ConditionRendering';
+// import Rendering from './ConditionRendering';
+import Class from './ClassComponent'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,8 +29,8 @@ root.render(
     <br/><br/><br/><br/><br/>
     <br/><br/><br/> <hr/><hr/> <br/><br/>
     
-    <Rendering/>
-    
+    {/* <Rendering/> */}
+    <Class/>
   </React.StrictMode>
 );
 

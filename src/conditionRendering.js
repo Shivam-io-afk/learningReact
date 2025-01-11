@@ -5,8 +5,9 @@ const Rendering = () => {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+    //Calling this function from form.js (passing as props)
     function vcheck(){
-        alert("Heyy there! You are logged in.");
+        alert("Heyy there! Please Sign in first.\n\nYou can't submit the form skipping the Sign in process.");
     }
 
     return (

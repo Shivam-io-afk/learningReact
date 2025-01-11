@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function FormHandler(p) {
+function FormHandler(pops) {
     const [name, setName] = useState(null);
     const [tnc, setTnc] = useState(false);
     const [checked, setChecked] = useState(false);
@@ -29,7 +29,7 @@ function FormHandler(p) {
                 </div>
                 <br/>
                 <div>
-                    <button type='submit' onClick={() => p.data()}>Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type='submit' onClick={() => pops.data()}>Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type='reset' value='Reset'/>
                 </div>
                 <br/>
