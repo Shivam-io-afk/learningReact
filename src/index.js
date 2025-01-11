@@ -11,9 +11,9 @@ import Rendering from './ConditionRenderin';
 import States from './Hooks/State';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-var k = 0;
+var k = 1;
 root.render(
-  <div>
+  <React.StrictMode>
     {
       k < 1 ?
         <div>
@@ -44,7 +44,7 @@ root.render(
           <States />
         </div>
     }
-  </div>
+  </React.StrictMode>
 );
 
 

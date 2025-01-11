@@ -187,4 +187,7 @@ In React class components, the update process involves several lifecycle methods
 
 
 # In Functional Component 
-- useEffect is very useful hook, it contains all lifecycle method 3
+- useEffect is very useful hook, it contains all lifecycle method 
+- Tip
+If you're familiar with React class lifecycle methods, you can think of use Effect Hook as
+componentDidMount, component DidUpdate, and component Will Unmount combined.

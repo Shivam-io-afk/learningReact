@@ -1,0 +1,41 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+a {
+    color: #bb86fc;
+}
+
+button {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+input {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+header, footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333333;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.container {
+    background-color: #121212;
+    color: #ffffff;
+}
