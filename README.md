@@ -187,4 +187,4 @@ In React class components, the update process involves several lifecycle methods
 
 
 # In Functional Component 
--useEffect is very useful hook, it contains all lifecycle method 3
+- useEffect is very useful hook, it contains all lifecycle method 3
