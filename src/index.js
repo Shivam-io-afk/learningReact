@@ -9,11 +9,12 @@ import Form from './Form';
 import Class from './ClassComponent';
 import Rendering from './ConditionRenderin';
 import States from './Hooks/State';
+import Effect from './Hooks/Effect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 var k = 1;
 root.render(
-  <React.StrictMode>
+  <div>
     {
       k < 1 ?
         <div>
@@ -41,10 +42,11 @@ root.render(
         </div>
         : 
         <div>
-          <States />
+          <States/>
+          <Effect/>
         </div>
     }
-  </React.StrictMode>
+  </div>
 );
 
 
