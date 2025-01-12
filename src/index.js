@@ -10,13 +10,11 @@ import Class from './ClassComponent';
 import Rendering from './ConditionRenderin';
 import States from './Hooks/State';
 import Effect from './Hooks/Effect';
-import Boots from './Hooks/bootstrapps';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import ArryHandling from './Hooks/HandlingArrayList';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-var k = 3;
+var k = 1;
 root.render(
   <div>
     {
@@ -49,12 +47,11 @@ root.render(
           <div>
             <States />
             <Effect />
+            <ArryHandling/>
           </div>
           :
-          <div>
-            <Boots/>
-          </div>
-        
+          null
+
     }
   </div>
 );

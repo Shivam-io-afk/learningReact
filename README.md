@@ -191,3 +191,8 @@ In React class components, the update process involves several lifecycle methods
 - Tip
 If you're familiar with React class lifecycle methods, you can think of use Effect Hook as
 `componentDidMount`, `component DidUpdate`, and `component Will Unmount` combined.
+
+
+
+# In Mappig 
+- In Mapping the array of objects and displayed the data according to the use. we need `KEY` attribute to uniquely identify the element. because it helps react to identify which items have changed, are added, or are removed. 
