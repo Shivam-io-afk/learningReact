@@ -17,6 +17,7 @@ const ArryHandling = () => {
             <table border={2} cellPadding={5} width={500}>
                 <tbody>
                     <tr>
+                        <td>Serial No.</td>
                         <td>Name</td>
                         <td>UserID</td>
                     </tr>
@@ -24,6 +25,7 @@ const ArryHandling = () => {
                         arr.map((item, index) => {
                             return (
                                 <tr key={index}>
+                                    <td>{index + 1}</td>
                                     <td>{item.Name}</td>
                                     <td>{item.UserID}</td>
                                 </tr>

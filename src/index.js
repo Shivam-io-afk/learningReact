@@ -16,7 +16,7 @@ import ArryHandling from './Hooks/HandlingArrayList';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 var k = 1;
 root.render(
-  <div>
+  <>
     {
       k < 1 ?
         <div>
@@ -53,7 +53,7 @@ root.render(
           null
 
     }
-  </div>
+  </>
 );
 
 

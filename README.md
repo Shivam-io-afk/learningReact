@@ -196,3 +196,18 @@ If you're familiar with React class lifecycle methods, you can think of use Effe
 
 # In Mappig 
 - In Mapping the array of objects and displayed the data according to the use. we need `KEY` attribute to uniquely identify the element. because it helps react to identify which items have changed, are added, or are removed. 
+
+
+
+# React Fragments (Advanced)
+-  React Fragments are used to return multiple elements from a component without adding extra nodes to the DOM
+- if we use div instead of `React.Fragment` then it will create a div in the dom
+- if we use div in the table then it will show error but if we use fragment then it will work fine
+
+
+
+# Lifting Stateup or sending data child to parent node
+-  lifting stateup is used to pass the data from `child to parent component` (from child to parent)
+- for sending data parent to child we use props and for child to parent we use callback function (`props` are `immutable`  and `callback` function is `mutable`) 
+- we also use context api for sending data to the child component without using props to the parent component
+-  lifting the state up to the parent component means that the parent component has the state and the child component has the props to access the state of the parent component 
