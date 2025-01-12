@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Styles from './buttons.module.css'; //importing css file as module 
 
 function Effect() {
     const [count, setCount] = useState(0);
@@ -18,7 +19,7 @@ function Effect() {
             <button onClick={() => setCount(count + 1)}>Increment</button>
 
             <br/><br/>
-            <input type='text' onChange={(e) => setName(e.target.value)} />
+            <input type='text' onChange={(e) => setName(e.target.value)} className={Styles.coolinput}/>
             <EffectWithStateProps data={name}/>
         </div>
     );
@@ -32,7 +33,7 @@ export function EffectWithStateProps(props){
     console.log(props);
 
     useEffect(() => {
-        console.log("<b>useEffectWithStateProps</b>");
+        console.log("useEffectWithStateProps");
     },[props.data]);
     return(
         <div>
