@@ -8,7 +8,7 @@ const Counter = () => {
     const increment = () => {
         setCount(count + 1);
     };
-    
+
     const decrement = () => {
         setCount(count - 1);
     };
@@ -19,6 +19,7 @@ const Counter = () => {
             <button onClick={increment} className={Styles.coolbutton}>Increment</button>
             &nbsp;&nbsp;
             <button onClick={decrement} className={Styles.coolbutton}>Decrement</button>
+
         </div>
     );
 };

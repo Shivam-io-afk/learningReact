@@ -10,9 +10,13 @@ import Class from './ClassComponent';
 import Rendering from './ConditionRenderin';
 import States from './Hooks/State';
 import Effect from './Hooks/Effect';
+import Boots from './Hooks/bootstrapps';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-var k = 1;
+var k = 3;
 root.render(
   <div>
     {
@@ -40,11 +44,17 @@ root.render(
 
           <Class />
         </div>
-        : 
-        <div>
-          <States/>
-          <Effect/>
-        </div>
+        :
+        k < 2 ?
+          <div>
+            <States />
+            <Effect />
+          </div>
+          :
+          <div>
+            <Boots/>
+          </div>
+        
     }
   </div>
 );

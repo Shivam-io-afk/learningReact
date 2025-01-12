@@ -37,7 +37,7 @@ export function EffectWithStateProps(props){
     },[props.data]);
     return(
         <div>
-            <h2>Mool</h2>
+            <h2>-----------------------</h2>
         </div>
     )
 
