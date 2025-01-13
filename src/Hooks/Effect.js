@@ -33,7 +33,7 @@ export function EffectWithStateProps(props){
     console.log(props);
 
     useEffect(() => {
-        console.log("useEffectWithStateProps");
+        console.log("useEffectWithProps");
     },[props.data]);
     return(
         <div>

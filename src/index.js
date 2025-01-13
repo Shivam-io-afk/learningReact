@@ -11,6 +11,7 @@ import Rendering from './ConditionRenderin';
 import States from './Hooks/State';
 import Effect from './Hooks/Effect';
 import ArryHandling from './Hooks/HandlingArrayList';
+import Lifting  from './Hooks/StateUp';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,25 +22,10 @@ root.render(
       k < 1 ?
         <div>
           <App />
-
-          <br /><hr /><hr /><br />
-
           <State />
-
-          <br /><hr /><hr /><br />
-
           <Porps name='LalSinghChaddha' userID="battalion 609" />
-
-          <br /><hr /><hr /><br />
-
           <Form />
-
-          <br /><br /><br />
-          <br /><hr /> <br />
-
           <Rendering />
-          <br /><br /><br /> <hr /> <br /><br />
-
           <Class />
         </div>
         :
@@ -48,6 +34,7 @@ root.render(
             <States />
             <Effect />
             <ArryHandling/>
+            <Lifting/>
           </div>
           :
           null

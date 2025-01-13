@@ -17,6 +17,8 @@ function Proper(props) {
 
     return (
         <div>
+                    <br /><hr /><hr /><br />
+                    
             <h5>{props.name}</h5>
             <h5>{props.userID}</h5>
             <br></br>

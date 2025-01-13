@@ -11,7 +11,9 @@ export function State() {
   };
 
   return (
-    <div>
+    <>
+            <br /><hr /><hr /><br />
+
       <h3>Count: {count}</h3>
       <button onClick={increment}>Increment</button>
 
@@ -34,6 +36,6 @@ export function State() {
       &nbsp;&nbsp;
       <button value="Toggle" onClick={() => setVisible(!visible)}>Toggle</button>
 
-    </div>
+    </>
   ); 
 }

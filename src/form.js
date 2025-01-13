@@ -13,6 +13,8 @@ function FormHandler(pops) {
 
     return (
         <div style={{ height: "150px", width: "100%" }}>
+                    <br /><hr /><hr /><br />
+    
             <h1>Form Handler</h1>
             <form onSubmit={(prevent)} style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", height: "100%", width: "100%" }}>
                 <input type='text' autoFocus onChange={(e) => setName(e.target.value)}/>

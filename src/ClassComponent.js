@@ -41,7 +41,10 @@ class User extends React.Component {
     render() {
         console.log("Rendered");
         return (
-            <div>
+            <>
+                <br /><br /><br /> <hr /> <br /><br />
+                
+
                 <h1>Class Component</h1>
                 <h2>Hi, I'm {this.state.name}</h2>
                 <h3>My User ID is {this.state.userID}</h3>
@@ -53,7 +56,7 @@ class User extends React.Component {
                 {
                     this.state.count % 2 ? <Child /> : null
                 }
-            </div>
+            </>
         );
     }
 }

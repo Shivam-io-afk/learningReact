@@ -28,7 +28,7 @@ const ArryHandling = () => {
                                     <td>{index + 1}</td>
                                     <td>{item.Name}</td>
                                     <td>{item.UserID}</td>
-                                </tr>
+                                </tr>//
                             )
                         })
                     }

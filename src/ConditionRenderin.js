@@ -12,6 +12,9 @@ const Rendering = () => {
 
     return (
         <div>
+            <br /><br /><br />
+            <br /><hr /> <br />
+            
             {
                 isLoggedIn ? <div> <h1>Welcome back!</h1> </div>
                     : <div>
