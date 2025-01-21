@@ -12,7 +12,7 @@ import States from './Hooks/State';
 import Effect from './Hooks/Effect';
 import ArryHandling from './Hooks/HandlingArrayList';
 import Parent  from './Hooks/Parent';
-
+import Memoo from './Hooks/useMemoo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 var k = 1;
@@ -35,6 +35,7 @@ root.render(
             <Effect />
             <ArryHandling/>
             <Parent/>
+            <Memoo/>
           </div>
           :
           null

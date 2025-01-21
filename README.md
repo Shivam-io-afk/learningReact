@@ -203,7 +203,7 @@ If you're familiar with React class lifecycle methods, you can think of use Effe
 -  React Fragments are used to return multiple elements from a component without adding extra nodes to the DOM
 - if we use div instead of `React.Fragment` then it will create a div in the dom
 - if we use div in the table then it will show error but if we use fragment then it will work fine
-
+```<> </>``` 
 
 
 # Lifting Stateup or sending data child to parent node
