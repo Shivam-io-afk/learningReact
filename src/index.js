@@ -11,7 +11,7 @@ import Rendering from './ConditionRenderin';
 import States from './Hooks/State';
 import Effect from './Hooks/Effect';
 import ArryHandling from './Hooks/HandlingArrayList';
-import {Parent}  from './Hooks/Parent';
+import Parent  from './Hooks/Parent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

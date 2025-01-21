@@ -1,16 +1,19 @@
-import Lifting from './StateUp';
-import Stylez from './buttons.module.css';
+import Lifting from './LiftStateUp';
 
-export function Parent(){
+ function Parent(){
+    var callBck = (x) =>{
+        alert(x);
+    }
     return (
         <div>
             <br />
-            <Lifting />
             <h1>Parent Component</h1>
-            <button className={Stylez.coolbutton}>Click To get Data From Child Component</button>
-            <br/><br/>
+            <Lifting data={callBck}/>
             <br/><br/>
         </div>
-    )
+    )   
 }
 
+
+
+export default Parent;
