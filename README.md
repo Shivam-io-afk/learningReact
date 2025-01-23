@@ -211,3 +211,15 @@ If you're familiar with React class lifecycle methods, you can think of use Effe
 - for sending data parent to child we use props and for child to parent we use callback function (`props` are `immutable`  and `callback` function is `mutable`) 
 - we also use context api for sending data to the child component without using props to the parent component
 -  lifting the state up to the parent component means that the parent component has the state and the child component has the props to access the state of the parent component 
+
+
+
+
+## How You can create Pure Component in functional Component
+- For creating Pure component in Functional Component,so we use Hook - useMemo
+
+
+## Hook0 - useRef
+- Ref or useReft is hook in react which is generally used into class components, Ref has a functinality of DOM Manipulation But React not allowed to directly manipulate dom because if cause low performance in appliation in react, use only in emergency!
+
+- it is used on form validation, to change color, to get value etc...

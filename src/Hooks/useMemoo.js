@@ -1,5 +1,5 @@
 import React,{useMemo,useState} from "react";
-import Counter from "./State";
+// import Counter from "./State";
 
 function Memoo(){
     const [Number, SetNumber] = useState(0);

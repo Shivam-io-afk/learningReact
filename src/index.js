@@ -13,6 +13,8 @@ import Effect from './Hooks/Effect';
 import ArryHandling from './Hooks/HandlingArrayList';
 import Parent  from './Hooks/Parent';
 import Memoo from './Hooks/useMemoo';
+import Reff from './Hooks/useReff';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 var k = 1;
@@ -36,6 +38,7 @@ root.render(
             <ArryHandling/>
             <Parent/>
             <Memoo/>
+            <Reff/>
           </div>
           :
           null
