@@ -14,10 +14,11 @@ import ArryHandling from './Hooks/HandlingArrayList';
 import Parent  from './Hooks/Parent';
 import Memoo from './Hooks/useMemoo';
 import Reff from './Hooks/useReff';
+import PageRouting from './Routing/MainPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-var k = 1;
+var k = 3;
 root.render(
   <>
     {
@@ -41,7 +42,7 @@ root.render(
             <Reff/>
           </div>
           :
-          null
+          <PageRouting/>
 
     }
   </>
