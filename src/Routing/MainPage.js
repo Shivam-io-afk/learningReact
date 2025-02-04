@@ -30,7 +30,7 @@ const MainPage = () => {
           <Route path="/" exact={true} element={<Component1 />} />
           <Route path="/Page2" element={<Component2 />} />
           <Route path="/Page3" element={<Component3 />} />
-          <Route path="*" element={<PageNFound/>}/>
+          <Route path="*" exact={true} element={<PageNFound/>}/>
         </Routes>
       </Router>
     </div>

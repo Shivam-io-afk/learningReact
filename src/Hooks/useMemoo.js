@@ -5,7 +5,8 @@ function Memoo(){
     const [Number, SetNumber] = useState(0);
     const [Multi, SetMulti] = useState(1);
 
-    
+    // it controls function rendering 
+    //Optimizes performance by render only that component which is updating during updation rest of other will stay rest
     const Numsmulti = useMemo(function Bhalue() {
     console.warn("ss");
         return Multi * 10;

@@ -11,10 +11,11 @@ import Rendering from './ConditionRenderin';
 import States from './Hooks/State';
 import Effect from './Hooks/Effect';
 import ArryHandling from './Hooks/HandlingArrayList';
-import Parent  from './Hooks/Parent';
+import Parent from './Hooks/Parent';
 import Memoo from './Hooks/useMemoo';
 import Reff from './Hooks/useReff';
 import PageRouting from './Routing/MainPage';
+import DynamicRout from './Routing/DynamicRout';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,26 +25,28 @@ root.render(
     {
       k < 1 ?
         <div>
-          <App />
-          <State />
+          <App/>
+          <State/>
           <Porps name='LalSinghChaddha' userID="battalion 609" />
-          <Form />
-          <Rendering />
-          <Class />
+          <Form/>
+          <Rendering/>
+          <Class/>
         </div>
         :
         k < 2 ?
           <div>
-            <States />
-            <Effect />
+            <States/>
+            <Effect/>
             <ArryHandling/>
             <Parent/>
             <Memoo/>
             <Reff/>
           </div>
           :
-          <PageRouting/>
-
+          <div>
+            <PageRouting/>
+            <DynamicRout/>
+          </div>
     }
   </>
 );

@@ -223,3 +223,6 @@ If you're familiar with React class lifecycle methods, you can think of use Effe
 - Ref or useReft is hook in react which is generally used into class components, Ref has a functinality of DOM Manipulation But React not allowed to directly manipulate dom because if cause low performance in appliation in react, use only in emergency!
 
 - it is used on form validation, to change color, to get value etc...
+
+
+## In React Routing Switches is change into  is Routes 
