@@ -2,7 +2,7 @@ const boxStyle = {
     border: "1px solid red",
     padding: "20px",
     margin: "20px",
-    textAlign: "center",
+    textAlign: "center"
   };
   
 

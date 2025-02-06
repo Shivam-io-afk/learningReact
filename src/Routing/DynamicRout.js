@@ -14,14 +14,16 @@ function MainDynComponent() {
                     DATA.map((items, keys) => {
                         return (
                             <>
-                                <Link to={`/user/${items.id}/${items.Name}/${items.phno}`} key={keys}> {`link ${items.id}`} </Link>
+                                <Link to={`/user/${items.id}/${items.Name}/${items.phno}`} key={keys}> 
+                                {`link ${items.id}`} 
+                                </Link>
                                 <br/>
                             </>
                         )
                     })
                 }
                 <Routes>
-                    <Route path='/user/:id' element={<Dynpage/>}/>
+                    <Route path='/user/:id/:name/:phno' element={<Dynpage/>}/>
                 </Routes>
             </Router>
         </div>
